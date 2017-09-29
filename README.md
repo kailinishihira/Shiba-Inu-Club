@@ -21,11 +21,11 @@ _A webpage for the Shiba Inu Enthusiasts group. Users may view a list of members
 
 * _Install [Node.js](https://nodejs.org/en/download/)_
 * _Clone repository_
-* Install Angular CLI `npm install -g @angular/cli@1.0.0`
-* Install Typescript `npm list -g typescript`
-* Install Bower `npm install bower -g`
-* `bower init`
-* `bower install bootstrap --save`
+* _Install Angular CLI `npm install -g @angular/cli@1.0.0`_
+* _Install Typescript `npm list -g typescript`_
+* _Install Bower `npm install bower -g`_
+* _`bower init`_
+* _`bower install bootstrap --save`_
 
 ## Create a Firebase account
 * Create an account with [Firebase](https://firebase.google.com/)

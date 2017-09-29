@@ -27,9 +27,21 @@ _A webpage for the Shiba Inu Enthusiasts group. Users may view a list of members
 * `bower init`
 * `bower install bootstrap --save`
 
-## Firebase
-* Install Firebase `npm install angularfire2@4.0.0-rc.0 firebase --save`
+## Create a Firebase account
 * Create an account with [Firebase](https://firebase.google.com/)
+* Create a new project
+* Change the Firebase rules in the database to "true"
+
+```
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+```
+## Install Firebase
+* `npm install angularfire2@4.0.0-rc.0 firebase --save`
 * Create a new file `src/app/api-keys.ts`
 * Paste the following code into the file and replace with your credentials from Firebase:
 
@@ -42,6 +54,11 @@ export var masterFirebaseConfig = {
     messagingSenderId: "xxxx"
   };
   ```
+
+#### Install promise-polyfill if you encounter error: Can't resolve 'promise-polyfill'
+* `npm install promise-polyfill --save-exact`
+
+
 ## Technologies Used
 * _JavaScript_
 * _Node.js_

@@ -1,0 +1,62 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Member</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-3">
+        <label for="category">Member Name:</label>
+      </div>
+      <div class="col-md-9">
+        <input class="form-control" #memberName>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label>Number of Shiba Inus:</label>
+      </div>
+      <div class="col-md-9">
+        <input class="form-control" type="number" #numberOfShibas>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label>Shiba Inu Name(s)</label>
+      </div>
+      <div class="col-md-9">
+        <input class="form-control" #shibaName>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label>Shiba Age(s):</label>
+      </div>
+      <div class="col-md-9">
+        <input class="form-control" #shibaAge>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label>About:</label>
+      </div>
+      <div class="col-md-9">
+        <textarea #aboutShiba rows="15" cols="115"></textarea>
+      </div>
+    </div>
+    <br>
+
+  <button class="btn btn-default" (click) = "submitForm(memberName.value, numberOfShibas.value, shibaName.value, shibaAge.value, aboutShiba.value); memberName.value=''; numberOfShibas.value=''; shibaName.value=''; aboutShiba.value=''">Add Member</button>
+  </div>
+</div>
+
+<div>
+  <app-member-list></app-member-list>
+</div>

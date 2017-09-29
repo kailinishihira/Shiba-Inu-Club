@@ -3,5 +3,4 @@
 <div *ngFor="let member of members | async" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">{{member.memberName}}</h3>
-
   </div>

@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { SplashComponent} from './splash/splash.component';
 import { AboutComponent } from './about/about.component';
 import { MemberListComponent } from './member-list/member-list.component';
+import { MemberDetailsComponent } from './member-details/member-details.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -16,6 +18,14 @@ const appRoutes: Routes = [
    {
      path: 'members',
      component: MemberListComponent
+   },
+   {
+     path: 'members/:id',
+     component: MemberDetailsComponent
+   },
+   {
+     path: 'admin',
+     component: AdminComponent
    }
  ];
 

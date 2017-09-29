@@ -1,0 +1,55 @@
+<h3>Edit Member</h3>
+
+<div class="row">
+  <div class="col-md-3">
+    <label>New Member Name:</label>
+  </div>
+  <div class="col-md-9">
+    <input [(ngModel)]="selectedMember.memberName">
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-md-3">
+    <label>New Number of Shiba Inus:</label>
+  </div>
+  <div class="col-md-9">
+    <input [(ngModel)]="selectedMember.numberOfShibas" class="form-control">
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-md-3">
+    <label>New Shiba Inu Name:</label>
+  </div>
+  <div class="col-md-9">
+    <input [(ngModel)]="selectedMember.shibaName" class="form-control">
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-md-3">
+    <label>New Shiba Inu Age:</label>
+  </div>
+  <div class="col-md-9">
+    <input [(ngModel)]="selectedMember.shibaAge" class="form-control">
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-md-3">
+    <label>New About:</label>
+  </div>
+  <div class="col-md-9">
+    <textarea [(ngModel)]="selectedMember.aboutShiba"  rows="15" cols="115"></textarea>
+  </div>
+</div>
+<br>
+
+<button class="btn btn-default" (click)="updateThisMember(selectedMember)">Save Update</button>
+<hr>
+<button class="btn btn-default" (click)="deleteThisMember(selectedMember)">Delete</button>

@@ -11,6 +11,9 @@ import { SplashComponent } from './splash/splash.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { MemberListComponent } from './member-list/member-list.component';
+import { MemberDetailsComponent } from './member-details/member-details.component';
+import { AdminComponent } from './admin/admin.component';
+import { EditComponent } from './edit/edit.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +27,10 @@ export const firebaseConfig = {
     AppComponent,
     SplashComponent,
     AboutComponent,
-    MemberListComponent
+    MemberListComponent,
+    MemberDetailsComponent,
+    AdminComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+<div *ngIf="memberToDisplay | async">
+    <h3>Member Name: {{(memberToDisplay | async).memberName}}</h3>
+    <h4>Number of Shiba Inus: {{(memberToDisplay | async).numberOfShibas}}</h4>
+    <h4>Shiba Inu Name(s): {{(memberToDisplay | async).shibaName}}</h4>
+    <h4>Shiba Inu Age(s): {{(memberToDisplay | async).shibaAge}}</h4>
+    <h4>About Shiba Inu(s): {{(memberToDisplay | async).aboutShiba}}</h4>
+</div>

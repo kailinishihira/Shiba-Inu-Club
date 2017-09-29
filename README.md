@@ -1,4 +1,65 @@
-# ClubManager
+# Club Manager
+
+#### _A webpage for a Shiba Inu meet up group, 09.29.17_
+
+#### By _**Kaili Nishihira**_
+
+## Description
+_A webpage for the Shiba Inu Enthusiasts group. Users may view a list of members and their information. The administrator can add new members to the group, update existing member information and delete members as needed._
+
+## User Story
+
+* As a user, I'd like to visit a page to see a list of all club members.
+* As a user, I'd like to click a club member's entry in the list to visit their profile page, which should include more details about them.
+* As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do.
+* As a user, I'd like all data persisted in a database, so it's always there when I need it.
+* As an administrator, I want to add new users to the club. (User authentication is not required).
+* As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details.
+* As an administrator, need the option to delete a user, in case they leave the club or team.
+
+## Setup/Installation Requirements
+
+* _Install [Node.js](https://nodejs.org/en/download/)_
+* _Clone repository_
+* Install Angular CLI `npm install -g @angular/cli@1.0.0`
+* Install Typescript `npm list -g typescript`
+* Install Bower `npm install bower -g`
+* `bower init`
+* `bower install bootstrap --save`
+
+## Firebase
+* Install Firebase `npm install angularfire2@4.0.0-rc.0 firebase --save`
+* Create an account with [Firebase](https://firebase.google.com/)
+* Create a new file `src/app/api-keys.ts`
+* Paste the following code into the file and replace with your credentials from Firebase:
+
+```
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+  ```
+## Technologies Used
+* _JavaScript_
+* _Node.js_
+* _[Bootstrap](http://getbootstrap.com/getting-started/)_
+* AngularJS 2
+
+
+### License
+
+Copyright (c) 2017 **_Kaili Nishihira_**
+
+*Licensed under the [MIT License](https://opensource.org/licenses/MIT)*
+
+
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 

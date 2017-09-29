@@ -1,0 +1,28 @@
+{
+  "members": [
+    {
+    "memberName": "Kaili",
+    "numberOfShibas": 1,
+    "shibaName": "Momo",
+    "shibaAge": "3",
+    "aboutShiba": "Momo is the best dog ever. She has a great temperament and gets along with everyone. Her favorite activities are being chased and playing with her toys.",
+    "id": "1"
+    },
+    {
+      "memberName": "Scott",
+      "numberOfShibas": 2,
+      "shibaName": "Mika and Chako",
+      "shibaAge": "10 and 5",
+      "aboutShiba": "Mika and Chako are great guard dogs. They don't get along with all dogs but will tolerate other Shibas. They are not good with children and strangers but will warm up quickly when offered treats.",
+      "id": "2"
+    },
+    {
+      "memberName": "Amy",
+      "numberOfShibas": 1,
+      "shibaName": "Soka",
+      "shibaAge": "2",
+      "aboutShiba": "Soka is a rescue dog. She was very fearful when we first got her but she has flourished after training courses and lots of socialization.",
+      "id": "3"
+    }
+  ]
+}

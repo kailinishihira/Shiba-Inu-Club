@@ -1,0 +1,30 @@
+h1 {
+  margin-bottom: 3%;
+  letter-spacing: 5px;
+}
+
+.panel {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #000000;
+}
+
+.panel-body {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #c7c8c9;
+  letter-spacing: 5px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+label {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}

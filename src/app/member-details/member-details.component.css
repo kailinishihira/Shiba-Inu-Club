@@ -1,0 +1,27 @@
+h1 {
+  margin-bottom: 10%;
+  letter-spacing: 5px;
+}
+
+label {
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+h3 {
+  letter-spacing: 10px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+p {
+  font-size: 25px;
+}
+
+.well {
+  background-color: #000000;
+  color: #c7c8c9;
+  margin-right: 15%;
+  margin-left: 15%;
+}

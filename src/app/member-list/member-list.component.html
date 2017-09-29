@@ -2,13 +2,34 @@
 
 <div *ngFor="let member of members | async" class="panel panel-default">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(member)">{{member.memberName}}</h3>
+    <h3 (click)="goToDetailPage(member)">{{member.memberName}} & <em>{{member.shibaName}}</em></h3>
     <div *ngIf="currentRoute === '/admin'">
-      <h4>Number of Shiba Inus: {{member.numberOfShibas}}</h4>
-      <h4>Shiba Inu Name(s): {{member.shibaName}}</h4>
-      <h4>Shiba Inu Age(s): {{member.shibaAge}}</h4>
-      <h4>About:</h4>
-      <p>{{member.aboutShiba}}</p>
+      <div class="row">
+        <div class="col-md-3">
+          <label>Number of Shiba Inus:</label>
+        </div>
+        <div class="col-md-9">
+          <p>{{member.numberOfShibas}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <label>Shiba Inu Age(s):</label>
+        </div>
+        <div class="col-md-9">
+          <p>{{member.shibaAge}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <label>About:</label>
+        </div>
+        <div class="col-md-9">
+          <p>{{member.aboutShiba}}</p>
+        </div>
+      </div>
       <hr>
       <app-edit [selectedMember]="member"></app-edit>
     </div>

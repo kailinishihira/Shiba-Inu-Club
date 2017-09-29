@@ -1,7 +1,40 @@
-<div *ngIf="memberToDisplay | async">
-    <h3>Member Name: {{(memberToDisplay | async).memberName}}</h3>
-    <h4>Number of Shiba Inus: {{(memberToDisplay | async).numberOfShibas}}</h4>
-    <h4>Shiba Inu Name(s): {{(memberToDisplay | async).shibaName}}</h4>
-    <h4>Shiba Inu Age(s): {{(memberToDisplay | async).shibaAge}}</h4>
-    <h4>About Shiba Inu(s): {{(memberToDisplay | async).aboutShiba}}</h4>
+<h1>Member Details</h1>
+
+<div *ngIf="memberToDisplay | async" class="well">
+  <h3>{{(memberToDisplay | async).memberName}}</h3>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Number of Shiba Inus: </label>
+    </div>
+    <div class="col-md-9">
+      <p>{{(memberToDisplay | async).numberOfShibas}}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <label>Shiba Inu Name(s): </label>
+    </div>
+    <div class="col-md-9">
+      <p>{{(memberToDisplay | async).shibaName}}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <label>Shiba Inu Age(s): </label>
+    </div>
+    <div class="col-md-9">
+      <p>{{(memberToDisplay | async).shibaAge}}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <label>About Shiba Inu(s): </label>
+    </div>
+    <div class="col-md-9">
+      <p>{{(memberToDisplay | async).aboutShiba}}</p>
+    </div>
+  </div>
 </div>

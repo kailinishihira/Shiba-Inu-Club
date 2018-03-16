@@ -1,4 +1,4 @@
-# Club Manager
+# Shiba Inu Club
 
 #### _A webpage for a Shiba Inu meet up group, 09.29.17_
 
